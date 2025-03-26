@@ -61,4 +61,5 @@ songfess-website
 Proyek ini dilisensikan di bawah **MIT License** - lihat file `LICENSE` untuk detail lebih lanjut.
 
 ---
-Dibuat dengan ❤️ oleh <p href="instagram.com/awfajrii">Auf Fajri Ramadhani</p>
+Dibuat dengan ❤️ oleh<p><a href="https://instagram.com/awfajrii" target="_blank">Auf Fajri Ramadhani</a></p>
+
