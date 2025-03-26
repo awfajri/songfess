@@ -1,5 +1,7 @@
 # Songfess Kelazzz F
 
+[![jasineri/gitartwork](gitartwork.svg)](https://github.com/awfajri/songfess)
+
 ## Overview
 Songfess Kelazzz F adalah sebuah website yang memungkinkan pengguna untuk mengirimkan permintaan lagu beserta pesan pribadi kepada teman mereka. Pengguna dapat mengirimkan entri baru, menelusuri entri yang ada berdasarkan nama penerima, serta menikmati antarmuka yang menarik dengan fitur pencarian lagu otomatis menggunakan API Spotify.
 
