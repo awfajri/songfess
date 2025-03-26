@@ -37,11 +37,11 @@ songfess-website
 ## Setup Instructions
 1. Clone repositori ke komputer lokal Anda.
    ```bash
-   git clone https://github.com/username/songfess-website.git
+   https://github.com/awfajri/songfess.git
    ```
 2. Masuk ke direktori proyek.
    ```bash
-   cd songfess-website
+   cd songfess
    ```
 3. Buat database dan konfigurasikan file `db.php` dengan kredensial database Anda.
 4. Siapkan API Spotify:
