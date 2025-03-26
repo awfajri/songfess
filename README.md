@@ -1,45 +1,64 @@
 # Songfess Kelazzz F
 
 ## Overview
-The Songfess website allows users to send song requests along with personalized messages to their friends. Users can submit new songfess entries, browse existing entries based on the recipient's name, and enjoy a visually appealing interface with embedded Spotify links for song selection.
+Songfess Kelazzz F adalah sebuah website yang memungkinkan pengguna untuk mengirimkan permintaan lagu beserta pesan pribadi kepada teman mereka. Pengguna dapat mengirimkan entri baru, menelusuri entri yang ada berdasarkan nama penerima, serta menikmati antarmuka yang menarik dengan fitur pencarian lagu otomatis menggunakan API Spotify.
 
 ## Project Structure
 ```
 songfess-website
 ├── src
-│   ├── index.php          # Main entry point displaying songfess entries
-│   ├── form.php           # Form for submitting new songfess entries
-│   ├── browse.php         # Search functionality for songfess entries
+│   ├── index.php          # Halaman utama yang menampilkan entri songfess
+│   ├── form.php           # Formulir untuk mengirimkan entri songfess baru
+│   ├── browse.php         # Fungsi pencarian entri songfess berdasarkan penerima
 │   ├── css
-│   │   └── style.css      # Styles for the website
+│   │   ├── style.css      # Gaya tampilan utama
+│   │   ├── form.css       # Gaya tampilan untuk formulir
+│   │   ├── browse.css     # Gaya tampilan untuk pencarian
+│   │   └── detail.css     # Gaya tampilan untuk detail entri
 │   ├── js
-│   │   └── script.js      # JavaScript functionality
+│   │   ├── browse.php     # Fungsi untuk pencarian lagu dan entri
+│   │   ├── detail.php     # Halaman detail songfess
+│   │   └── form.php       # Pemrosesan formulir songfess
 │   └── includes
-│       └── db.php        # Database connection handling
+│       └── db.php        # Koneksi database
 ├── assets
-│   └── logo.png           # Logo image for the website
-├── README.md               # Project documentation
-└── .gitignore              # Files to ignore in version control
+│   ├── images            # Berisi file gambar dan ikon
+│   ├── musik.mp3         # Contoh file musik
+├── README.md              # Dokumentasi proyek
+└── .gitignore             # File yang diabaikan dalam version control
 ```
 
 ## Features
-- **Submit Songfess**: Users can submit song requests with messages through a dedicated form.
-- **Browse Songfess**: Users can search for songfess entries based on the recipient's name.
-- **Embedded Spotify Links**: Songfess entries include embedded Spotify links for easy listening.
-- **Responsive Design**: The website is designed to be user-friendly and visually appealing.
+- **Submit Songfess**: Pengguna dapat mengirimkan permintaan lagu beserta pesan melalui formulir khusus.
+- **Browse Songfess**: Pengguna dapat mencari entri songfess berdasarkan nama penerima.
+- **Dropdown Pencarian Lagu**: Saat pengguna mengetikkan judul lagu, sistem akan menampilkan daftar lagu yang sesuai menggunakan API Spotify.
+- **Responsive Design**: Desain website yang ramah pengguna dan menarik secara visual.
 
 ## Setup Instructions
-1. Clone the repository to your local machine.
-2. Navigate to the project directory.
-3. Set up a database and configure the `db.php` file with your database credentials.
-4. Open `index.php` in your web browser to view the main page.
-5. Use the form to submit new songfess entries or browse existing ones.
+1. Clone repositori ke komputer lokal Anda.
+   ```bash
+   git clone https://github.com/username/songfess-website.git
+   ```
+2. Masuk ke direktori proyek.
+   ```bash
+   cd songfess-website
+   ```
+3. Buat database dan konfigurasikan file `db.php` dengan kredensial database Anda.
+4. Siapkan API Spotify:
+   - Dapatkan **Client ID** dan **Client Secret** dari [Spotify Developer Dashboard](https://developer.spotify.com/dashboard/).
+   - Simpan kredensial API di file konfigurasi atau dalam kode Anda.
+5. Jalankan proyek dengan membuka `index.php` di browser Anda.
+6. Gunakan formulir untuk mengirim entri songfess baru atau cari entri yang sudah ada.
 
 ## Technologies Used
-- PHP for server-side scripting
-- MySQL for database management
-- HTML/CSS for front-end design
-- JavaScript for dynamic functionality
+- **PHP** untuk pemrosesan di sisi server
+- **MySQL** untuk manajemen database
+- **HTML/CSS** untuk tampilan antarmuka
+- **JavaScript** untuk fitur dinamis
+- **Spotify API** untuk pencarian lagu secara otomatis
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+Proyek ini dilisensikan di bawah **MIT License** - lihat file `LICENSE` untuk detail lebih lanjut.
+
+---
+Dibuat dengan ❤️ oleh <p href="instagram.com/awfajrii">Auf Fajri Ramadhani</p>
