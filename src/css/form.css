@@ -1,0 +1,158 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-image: url("../assets/bg.png"); /* Menambahkan background image dengan jalur relatif */
+  background-size: cover; /* Mengatur ukuran background agar menutupi seluruh halaman */
+  background-position: center; /* Mengatur posisi background di tengah */
+  background-repeat: no-repeat; /* Mengatur agar background tidak diulang */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d8d8ff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #bbb6ff;
+  width: 100%; /* Memastikan navbar memiliki lebar penuh */
+  box-sizing: border-box;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "caveat", cursive;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 15px;
+  margin-right: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #191919;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #8c4eff;
+}
+h1 {
+  text-align: center;
+  font-family: "Caveat", cursive;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #2f2f2f;
+  font-weight: normal;
+}
+
+.card {
+  background-color: #9c31ff;
+  color: white;
+  border: 1px solid #bbb6ff;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.card h2 {
+  font-family: "Caveat", cursive;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.card p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+
+.songfess-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.songfess-form label {
+  margin-top: 10px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  color: #3b3b3b;
+}
+
+.songfess-form input,
+.songfess-form textarea,
+.songfess-form select {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #bbb6ff;
+  border-radius: 8px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  width: 100%; /* Pastikan elemen memiliki lebar penuh */
+  box-sizing: border-box; /* Pastikan padding dan border termasuk dalam lebar */
+}
+
+.songfess-form button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #7e4bff, #7d49ff);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.songfess-form button:hover {
+  background: linear-gradient(to right, #b090ff, #a987ff);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+  color: #d8e1ff;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 80%;
+  }
+  .songfess-form {
+    width: 80%;
+  }
+  .navbar-title {
+    display: none;
+  }
+  #song_dropdown {
+    max-width: 100%; /* Biar gak melewati batas layar */
+    width: 100%; /* Supaya tetap rapi */
+    font-size: 14px; /* Perkecil ukuran teks */
+    padding: 8px; /* Sesuaikan padding */
+    overflow: hidden; /* Hindari teks panjang keluar */
+    text-overflow: ellipsis; /* Tambahkan titik-titik jika teks terlalu panjang */
+    white-space: nowrap; /* Biar tetap dalam satu baris */
+  }
+}

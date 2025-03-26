@@ -1,0 +1,345 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  overflow-x: hidden;
+  background-image: url("/assets/bg.png"); /* Menambahkan background image */
+  background-size: cover; /* Mengatur ukuran background agar menutupi seluruh halaman */
+  background-position: center; /* Mengatur posisi background di tengah */
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d8d8ff;
+  padding: 10px 20px;
+  border-bottom: 1px solid #bbb6ff;
+  width: 100%; /* Memastikan navbar memiliki lebar penuh */
+  box-sizing: border-box;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-title {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "caveat", cursive;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 15px;
+  margin-right: 30px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #191919;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #8c4eff;
+}
+
+.Kontent.utama {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.Kontent.utama h1 {
+  font-family: "Caveat", cursive;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #2f2f2f;
+  font-weight: normal;
+  max-width: 600px; /* Membatasi lebar maksimum */
+  margin: 0 auto 20px; /* Menambahkan margin otomatis untuk center */
+  word-wrap: break-word; /* Memastikan kata-kata terbungkus dengan benar */
+  padding-top: 20px;
+}
+
+.Kontent.utama p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: small;
+  color: #3b3b3b;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.button-group .button {
+  background-color: #191919;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: small;
+  font-weight: normal;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.button-group .button-1 {
+  background: linear-gradient(to right, #7e4bff, #7d49ff);
+  color: white;
+}
+
+.button-group .button-2,
+.button-group .button-3 {
+  background-color: #ffffff;
+  border: 1px solid #bbb6ff;
+  color: #292929;
+}
+
+.button-group .button-1:hover {
+  background: linear-gradient(to right, #b090ff, #a987ff);
+  color: white;
+}
+
+.button-group .button-2:hover,
+.button-group .button-3:hover {
+  background: linear-gradient(to right, #b090ff, #a987ff);
+  color: white;
+}
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+.card-container p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #3b3b3b;
+}
+.card {
+  background-color: #fff;
+  border: 1px solid #bbb6ff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 30%;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  font-family: "Caveat", cursive;
+  font-weight: normal;
+  color: #2f2f2f;
+}
+
+.card p {
+  margin-bottom: 20px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: normal;
+  color: #3b3b3b;
+}
+
+.card .button {
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: small;
+  font-weight: normal;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.card .button-share {
+  background: linear-gradient(to right, #7e4bff, #7d49ff);
+  border: 1px solid #bbb6ff;
+  color: white;
+}
+.card .button-2 {
+  background-color: #ffffff;
+  border: 1px solid #bbb6ff;
+  color: #191919;
+}
+/* button di dalam card belum sesaui radiusnya */
+.card .button-share::after {
+  content: "→";
+  position: absolute;
+  right: 20px;
+  font-size: 1.2em;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.card .button:hover {
+  background: linear-gradient(to right, #b090ff, #a987ff);
+}
+
+.card .button-2:hover {
+  background: linear-gradient(to right, #b090ff, #a987ff);
+  color: white;
+}
+h1 {
+  font-family: "Caveat", cursive;
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #2f2f2f;
+  font-weight: normal;
+  max-width: 600px; /* Membatasi lebar maksimum */
+  margin: 0 auto 20px; /* Menambahkan margin otomatis untuk center */
+  word-wrap: break-word; /* Memastikan kata-kata terbungkus dengan benar */
+  padding-top: 20px;
+  text-align: center;
+}
+#songfess-list {
+  display: flex;
+  overflow-x: scroll; /* Menyembunyikan scrollbar horizontal dan menghilangkan kontrol manual */
+  gap: 20px;
+  white-space: nowrap; /* Membuat item berjajar secara horizontal */
+  padding: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: #6d88ff #ced9ff;
+  scrollbar-gutter: 10px;
+}
+.songfess-item {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 10px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+}
+.songfess-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.songfess-item h2 {
+  font-family: "Caveat", cursive;
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #2f2f2f;
+  text-align: center;
+  text-decoration: none;
+}
+
+.songfess-item p {
+  text-decoration: none;
+  text-align: center;
+  font-family: "caveat", cursive;
+  font-size: 14px;
+  color: #3b3b3b;
+  white-space: normal; /* Mengizinkan teks untuk membungkus ke baris berikutnya */
+  word-wrap: break-word; /* Memastikan kata-kata panjang terbungkus dengan benar */
+  overflow: hidden; /* Menyembunyikan teks yang meluap */
+}
+.songfess-item iframe {
+  max-width: 240px;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+  color: #d8e1ff;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Media Queries untuk tampilan mobile */
+@media (max-width: 768px) {
+  .navbar-title {
+    display: none;
+  }
+  .Kontent.utama h1 {
+    font-size: 28px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .songfess-item iframe {
+    max-width: min-content;
+  }
+  .card {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button-group .button {
+    width: auto; /* Mengatur lebar tombol sesuai panjang teks */
+  }
+
+  #songfess-list {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .songfess-item {
+    max-width: 300px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+}
+@media (max-width: 425px) {
+  .songfess-item {
+    width: 280px;
+    cursor: pointer;
+  }
+  .songfess-list {
+    display: flex;
+    overflow-x: scroll; /* Menyembunyikan scrollbar horizontal dan menghilangkan kontrol manual */
+    gap: 20px;
+    white-space: nowrap; /* Membuat item berjajar secara horizontal */
+    padding: 20px;
+    scrollbar-width: thin;
+    scrollbar-color: #6d88ff #ced9ff;
+    scrollbar-gutter: 10px;
+  }
+  .songfess-item iframe {
+    max-width: min-content;
+  }
+}
